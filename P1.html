@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B</title>
+    <link rel="icon" href="IMAGES/pfp1.avif">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("IMAGES/BG2.avif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: rgba(135, 212, 220, 0.77);
+            border-radius: 10px;
+            padding:50px;
+            width:400px;
+        }
+        a[type="submit"], input[type="reset"]{
+        background-color: crimson;
+        color: white;
+        padding:10px 20px;
+        border-radius:20px;
+        border:none;
+        transition:0,5s;
+    }
+    input:focus, textarea:focus, select:focus{
+        background-color: white;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover{
+        background: rgb(28, 24, 22);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    h2{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="abc.php" method="post">
+            <h2>HELLO FRIEND !! 😊</h2>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="CUTENAME" id="name" name="text"><br><br>
+            <label for="cities">Age:</label>
+            <select name="cities" id="cities">
+            <option value="Select">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            </select><br><br>
+            <input type="radio" id="PARENTS" name="fav_language" value="PARENTS">
+              <label for="PARENTS">PARENT👨🏻‍👩🏼‍👧🏻‍👦🏼</label><br>
+              <input type="radio" id="CHILD" name="fav_language" value="CHILD">
+            <label for="css">CHILD👶🏻</label><br><br>
+            <a href="p2.html" type="submit" value="SUBMIT">SUBMIT</a>
+        </form>
+    </div>
+</body>
+</html>
